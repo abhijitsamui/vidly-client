@@ -7,9 +7,9 @@ class LoginForm extends Component {
 
     console.log("submitted");
   };
-  handleChange = ({ target }) => {
+  handleChange = ({ target: input }) => {
     const account = { ...this.state.account };
-    account[target.name] = target.value;
+    account[input.name] = input.value;
     this.setState({ account });
   };
   render() {
